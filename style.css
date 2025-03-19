@@ -1,0 +1,96 @@
+
+.head {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 100px;
+  margin-bottom: 0px;
+  background-image: url(sample\ pictures\ for\ proj/8564ffe4e8e749363f5ed0ac49f6c266.png);
+  color: wheat;
+}
+.pto {
+  vertical-align: top;
+  display:inline-block;
+  height: 100px;
+
+}
+.dp {
+  width: 75px;
+  border-radius: 50%;
+}
+.gma,
+.thi,
+.elf {
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  vertical-align: top;
+  width: 275px;
+  transition: 0.3s;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: white;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.aud{
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  transition: 0.3s;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: white;
+  overflow: hidden;
+  margin-right: 10px;}
+.gma:hover,
+.thi:hover,
+.elf:hover,.aud:hover {
+  width: 320px;
+  border-radius: 20px;
+  padding-left: 50px;
+}
+.gm {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  object-position: left;
+  transition: 0.3s;
+}
+.gm:hover {
+  width: 250px;
+  height: 200px;
+  padding-left: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.th {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.th:hover {
+  width: 280px;
+  height: 300px;
+  padding-left: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.el {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.el:hover {
+  width: 280px;
+  height: 300px;
+  padding-left: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.cont1 {
+  background-image: url(sample\ pictures\ for\ proj/ghibli.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
