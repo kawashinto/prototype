@@ -1,4 +1,3 @@
-
 .head {
   text-align: center;
   margin-top: 0px;
@@ -9,9 +8,8 @@
 }
 .pto {
   vertical-align: top;
-  display:inline-block;
+  display: inline-block;
   height: 100px;
-
 }
 .dp {
   width: 75px;
@@ -31,7 +29,7 @@
   overflow: hidden;
   margin-right: 10px;
 }
-.aud{
+.aud {
   backdrop-filter: blur(10px);
   display: inline-block;
   vertical-align: top;
@@ -41,10 +39,12 @@
   border-radius: 20px;
   color: white;
   overflow: hidden;
-  margin-right: 10px;}
+  margin-right: 10px;
+}
 .gma:hover,
 .thi:hover,
-.elf:hover,.aud:hover {
+.elf:hover,
+.aud:hover {
   width: 320px;
   border-radius: 20px;
   padding-left: 50px;
@@ -93,4 +93,26 @@
   background-image: url(sample\ pictures\ for\ proj/ghibli.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+.vid {
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  background-color: transparent;
+  backdrop-filter: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  transform: scale(1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.vid:hover {
+  transform: scale(1.2);
+}
+.video {
+  object-fit: contain;
+  width: 300px;
+  height: 400px;
 }
