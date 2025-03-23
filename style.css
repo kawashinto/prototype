@@ -127,3 +127,14 @@
 .video:hover {
   transform: scale(1.2);
 }
+/* .bat:hover > :not(:hover) {
+  filter: blur(3px);
+  opacity: 0.5px;
+  transition: 0.3s;
+} */
+.butt:hover > :not(:hover) {
+  filter: blur(3px);
+  opacity: 0.5px;
+  transition: 0.3s;
+  transform: scale(0.8);
+}
