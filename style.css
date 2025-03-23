@@ -6,14 +6,19 @@
   background-image: url(sample\ pictures\ for\ proj/8564ffe4e8e749363f5ed0ac49f6c266.png);
   color: wheat;
 }
-.pto {
-  vertical-align: top;
-  display: inline-block;
-  height: 100px;
-}
 .dp {
-  width: 75px;
-  border-radius: 50%;
+  overflow-y: hidden;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  transition: 0.5s;
+  padding-bottom: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(196, 144, 217, 0.4);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+}
+.dp:hover {
+  width: 320px;
 }
 .gma,
 .thi,
@@ -115,4 +120,10 @@
   width: 300px;
   height: 400px;
   display: inline-block;
+  border-radius: 16px;
+  transform: scale(1);
+  transition: 0.2s;
+}
+.video:hover {
+  transform: scale(1.2);
 }
