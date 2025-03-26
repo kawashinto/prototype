@@ -1,11 +1,3 @@
-.head {
-  text-align: center;
-  margin-top: 0px;
-  font-size: 100px;
-  margin-bottom: 0px;
-  background-image: url(sample\ pictures\ for\ proj/8564ffe4e8e749363f5ed0ac49f6c266.png);
-  color: wheat;
-}
 .dp {
   overflow-y: hidden;
   height: 100px;
@@ -137,4 +129,40 @@
   opacity: 0.5px;
   transition: 0.3s;
   transform: scale(0.8);
+}
+.sidebar {
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  width: 50px;
+  height: 650px;
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  top: 130px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  bottom: -40px;
+  left: 20px;
+  transition: 0.3s;
+  align-items: center;
+}
+.sidebar:hover {
+  width: 130px;
+}
+
+.hme {
+  display: flex;
+  align-items: center;
+}
+.head {
+  text-align: center;
+  margin-top: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  font-size: 100px;
+  width: 100vw;
+  margin-bottom: 0px;
+  background-image: url(sample\ pictures\ for\ proj/8564ffe4e8e749363f5ed0ac49f6c266.png);
+  color: wheat;
 }
