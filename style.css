@@ -70,13 +70,22 @@
   height: 300px;
   padding-left: 10px;
   object-fit: cover;
+
   border-radius: 10px;
 }
 .el {
   width: 250px;
   height: 200px;
   object-fit: cover;
-  transition: 0.3s;
+  transition: 0.6s;
+  opacity: 0;
+}
+.elft {
+  opacity: 0;
+  transition: 1s;
+}
+.elft:hover {
+  opacity: 1;
 }
 .el:hover {
   width: 280px;
@@ -84,6 +93,7 @@
   padding-left: 10px;
   object-fit: cover;
   border-radius: 10px;
+  opacity: 1;
 }
 .cont1 {
   background-image: url(sample\ pictures\ for\ proj/ghibli.png);
