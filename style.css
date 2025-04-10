@@ -82,6 +82,7 @@
   opacity: 0;
 }
 .elft {
+   
   opacity: 0;
   transition: 1s;
 }
@@ -218,27 +219,32 @@
   align-items: center;
   scrollbar-color: transparent transparent;
   height: 300px;
+ 
+  padding-left: 70px;
   margin-top: 10px;
   margin-left: 70px;
   overflow-y:hidden;
   transition: 0.5s;
 }
 .bottom:hover{
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 380px;
 }
 .bottom:hover>.text{
   opacity: 1;
 
 }
-.bottom:hover>.spi{
+.bottom:hover>.ign{
   animation-name: heartbeat;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
+  
+
+ 
 }
 .text{
   display: inline-block;
-  
+  width: 500px;
   color: black;
   opacity: 0;
   transition: 0.5s;
@@ -247,7 +253,7 @@
 .spa 
 {
 
-  width: 680px;
+  width: 400px;
   color: transparent;
 }
 .box{
@@ -256,13 +262,24 @@
   justify-content: center;
   align-items: center;
 }
+.ign{
+  width: 300px;
+  height: 300px;
+  
+}
 .spi{
   width: 300px;
-  height: 300px;border-radius: 15px;
-  margin-left: -100px;
+  height: 300px;
+  
   object-fit: cover;
-  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  animation: slideshow 16s infinite;
+
 }
+
+ 
 @keyframes heartbeat{
   0%{
     transform: scale(1);
@@ -283,4 +300,24 @@
   {
     transform: scale(1);
   }
+}
+.spi:nth-child(1) {
+  animation-delay: 0s;
+}
+.spi:nth-child(2) {
+  animation-delay: 4s;
+}
+.spi:nth-child(3) {
+  animation-delay: 8s;
+}
+.spi:nth-child(4) {
+  animation-delay: 12s;
+}
+
+@keyframes slideshow {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
 }
