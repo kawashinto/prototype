@@ -216,7 +216,64 @@
         </div>
       </div>
     </div>
+    <!-- <div class="alert">
+      <div
+        style="
+          display: flex;
+          width: 500px;
+          height: 300px;
+          justify-content: center;
+          align-items: center;
+          backdrop-filter: blur(10px);
+          border-top-right-radius: 50px;
+          border-bottom-left-radius: 50px;
+          border-left: solid white 10px;
+          border-right: solid white 10px;
+        "
+      >
+        <h1>Alert <br /><button class="closebutton">close</button></h1>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="clip1">
+        <video
+          src="sample pictures for proj/Webdes/SnapInsta.to_AQNVwUxg3Qn4T_ay66hFmFu8Ar_m2fk25n44QhQJqEf_PeAVRNcdDzKlD1P-PCcwBQRc_vaVqh_oe-cXBEdU1XsFUHOujz-txABEtV0.mp4"
+          class="vlc"
+        ></video>
+      </div>
+      <div class="clip2">
+        <video
+          class="vlc"
+          src="sample pictures for proj/Webdes/Snapinst.app_video_AQPxK2ilV_Nfzk5metBPzSx56EfuLhCd_ky9p9gTlyEDXzFDIygwRJac6KP3008qQEUcBZgFhvRKMpfu8Kj4n7A4z2fr9D3TtURN6Vk.mp4"
+          type="video/mp4"
+        ></video>
+      </div>
+      <div class="clip3">
+        <video
+          class="vlc"
+          src="sample pictures for proj/Webdes/SnapInsta.to_AQOuwOrvZMSG6DU9qnStpR7DP2p1o5nuj3PpZmXqN5rlGnvh65OctjyKF0TXVOlq1C3t4AYpsWdrjbtyrQ2ZqtZqj8Ey8Wv8pMek7BE.mp4"
+        ></video>
+      </div>
+      <div class="clip4">
+        <video
+          class="vlc"
+          src="sample pictures for proj/Webdes/Snapinst.app_video_AQPYfVB5C_GuLstZt5zKsGlsyEqAxPSSC7Zl_ONeEZKrBzlnziNluwjD2RpCJWfSIj81w78Q5KMV2IPjGWHgnTd9niCTx1xDSwK7S9w.mp4"
+        ></video>
+      </div>
+    </div>
     <script>
+      const clip = document.querySelectorAll(".vlc");
+      for (let i = 0; i < clip.length; i++) {
+        clip[i].addEventListener("mouseenter", function (e) {
+          clip[i].play();
+        });
+        clip[i].addEventListener("mouseout", function (e) {
+          clip[i].pause();
+        });
+      }
+    </script>
+
+ <script>
       alert("yo yo what'sup byatch");
     </script>
   </body>
