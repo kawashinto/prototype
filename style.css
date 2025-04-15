@@ -138,7 +138,7 @@
 } */
 .butt:hover > :not(:hover) {
   filter: blur(3px);
-  opacity: 0.5px;
+  opacity: 0.5;
   transition: 0.3s;
   transform: scale(0.8);
 }
@@ -320,4 +320,78 @@
   25% { opacity: 1; }
   30% { opacity: 0; }
   100% { opacity: 0; }
+}
+.closebutton{
+  width: 100px;
+  border-left: white solid 3px;
+  border-right: white solid 3px;
+  font-size: large;
+  border-top-left-radius:10px ;
+  border-bottom-right-radius: 10px;
+    background-color: transparent;
+  backdrop-filter: blur(20px);
+  color: white;
+  height: 30px;
+}
+/* 
+.alert{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.container{
+  display: flex;
+  height: 500px;justify-content:space-evenly;
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 20px;
+  border-top-right-radius:20px ;
+  border-left: white solid 3px;
+  border-bottom: black solid 3px;
+  border-top: black solid 3px;
+  border-right: white solid 3px;
+  transition:0.3s;
+  
+  
+}
+.container:hover > :not(:hover){
+  filter: blur(3px);
+  opacity: 0.5;
+  transition: 0.5s;
+  
+}
+.clip1,.clip2,.clip3,.clip4{
+  height: 100%;
+  width:15% ;
+  display: flex;
+  overflow: hidden;
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50px;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+
+.clip1:hover{
+width: 25%;
+transform: scale(1.2);
+filter: grayscale(0);
+}
+.clip2:hover{
+width: 25%;
+transform: scale(1.2);
+filter: grayscale(0);
+}
+.clip3:hover{
+width: 25%;
+transform: scale(1.2);
+filter: grayscale(0);
+}
+.clip4:hover{
+width: 25%;
+transform: scale(1.2);
+filter: grayscale(0);
 }
